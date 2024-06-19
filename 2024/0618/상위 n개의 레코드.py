@@ -1,3 +1,5 @@
+# MySQL
+
 # 3. 출력 NAME
 SELECT NAME
 # 1. 테이블 ANIMAL_INS

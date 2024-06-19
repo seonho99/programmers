@@ -1,3 +1,4 @@
+# python
 
 # 높은 금액부터 할인
 def solution(price):
