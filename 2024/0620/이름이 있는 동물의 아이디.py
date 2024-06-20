@@ -1,0 +1,9 @@
+# MySQL
+# 2. 출력값 ANIMAL_ID
+SELECT ANIMAL_ID
+# 1. 테이블
+FROM ANIMAL_INS
+# 3. 이름이 있는 동물의 ID
+WHERE NAME is NOT NULL
+# 4. ID는 오름차순 
+ORDER BY ANIMAL_ID;
