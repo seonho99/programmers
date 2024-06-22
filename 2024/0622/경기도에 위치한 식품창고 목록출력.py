@@ -1,0 +1,27 @@
+# MySQL
+# 3. 창고ID, 이름, 주소, 냉동시설
+SELECT WAREHOUSE_ID
+    ,WAREHOUSE_NAME
+    ,ADDRESS
+    # 4. NULL 값을 N으로 지정
+    ,IFNULL(FREEZER_YN,'N') AS FREEZER_YN
+# 1. 테이블 출력
+FROM FOOD_WAREHOUSE
+# 2. 위치가 경기도
+WHERE ADDRESS LIKE '경기도%'
+# 5. 창고ID 순으로 정렬
+ORDER BY WAREHOUSE_ID;
+
+
+# 3. 창고ID, 이름, 주소, 냉동시설
+SELECT WAREHOUSE_ID
+    ,WAREHOUSE_NAME
+    ,ADDRESS
+    # 4. NULL 값을 N으로 지정
+    ,IFNULL(FREEZER_YN,'N') AS FREEZER_YN
+# 1. 테이블 출력
+FROM FOOD_WAREHOUSE
+# 2. 위치가 경기도
+WHERE WAREHOUSE_NAME LIKE '창고_경기%'
+# 5. 창고ID 순으로 정렬
+ORDER BY WAREHOUSE_ID;
