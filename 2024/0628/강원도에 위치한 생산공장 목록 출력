@@ -1,0 +1,9 @@
+# MySQL
+# 3. 식품공장의 공장 ID, 공장 이름, 주소
+SELECT FACTORY_ID, FACTORY_NAME, ADDRESS
+# 1. FOOD_FACTORY 테이블
+FROM FOOD_FACTORY
+# 2. 강원도에 위치한 
+WHERE ADDRESS LIKE "강원도%"
+# 4. 오름차순
+ORDER BY FACTORY_ID;
