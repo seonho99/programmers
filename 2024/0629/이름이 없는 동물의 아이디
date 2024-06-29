@@ -1,0 +1,7 @@
+# MySQL
+# 2. 동물 보호소에 들어온 동물 중
+SELECT ANIMAL_ID
+# 1. 테이블
+FROM ANIMAL_INS
+# 3. 이름이 없는 채로 들어온 동물의 ID
+WHERE NAME IS NULL;
