@@ -1,0 +1,8 @@
+# MySQL
+# 2. 동물의 생물 종, 이름, 성별 및 중성화 여부
+# 2. NULL이라는 기호를 이름이 없는 동물의 이름은 "No name"
+SELECT ANIMAL_TYPE, IFNULL(NAME, 'No name') AS NAME, SEX_UPON_INTAKE
+# 1. 테이블 이름
+FROM ANIMAL_INS
+# 3. 아이디 순으로 조회
+ORDER BY ANIMAL_ID;
