@@ -1,0 +1,8 @@
+# MySQL
+
+# 2. 각 동물의 아이디, 이름, 들어온 날짜
+SELECT ANIMAL_ID, NAME, DATE_FORMAT(DATETIME,'%Y-%m-%d')AS 날짜
+# 1. 테이블
+FROM ANIMAL_INS
+# 3. 아이디 순
+ORDER BY ANIMAL_ID;
