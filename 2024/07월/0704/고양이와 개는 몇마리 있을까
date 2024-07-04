@@ -1,0 +1,10 @@
+# 3. 각각 몇 마리인지 조회
+SELECT ANIMAL_TYPE, COUNT(*) AS count
+# 1. 테이블
+FROM ANIMAL_INS
+# 2. 동물중 고양이와 개
+WHERE ANIMAL_TYPE IN ('Cat','Dog')
+# 4. 그룹별 합계
+GROUP BY ANIMAL_TYPE
+# 5. ANIMAL_TYPE 기준으로 오름차순
+ORDER BY ANIMAL_TYPE ASC;
