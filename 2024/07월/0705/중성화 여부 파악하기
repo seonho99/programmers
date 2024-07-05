@@ -1,0 +1,12 @@
+MySQL 
+# 2. 동물의 아이디와 이름, 중성화 여부
+# 2. 중성화가 되어있다면 'O', 아니라면 'X'
+SELECT ANIMAL_ID, NAME,
+CASE 
+WHEN SEX_UPON_INTAKE LIKE 'Neutered%' THEN 'O'
+WHEN SEX_UPON_INTAKE LIKE 'Spayed%' THEN 'O'
+ELSE 'X' END AS 중성화
+# 1. 테이블 
+FROM ANIMAL_INS
+# 3. 아이디 순으로 조회
+ORDER BY ANIMAL_ID;
